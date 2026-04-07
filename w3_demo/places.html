@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="KT">
+    <meta name="description" content="W3 Multi-Page Site Demo">
+
+    <title>W3 | Demo</title>
+
+    <!--IN-DOCUMENT CSS-->
+    <style>
+        /*Write in CSS in here*/
+
+        /*select elements by TYPE - applies to all tags of that type*/
+        div {
+            border: 1px solid black;
+            padding:10px;
+            margin:5px
+        }
+
+        /*select an element by its ID - only applies to THAT element */
+        #wrapper {
+            background-color: grey;
+            width:900px;
+            margin:auto; /*centers element in page; auto equal left & right*/
+        }
+
+        .border {
+            background-color: white;
+            border:2px solid maroon;
+        }
+
+        .bg {
+            background-color:#000000;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+   <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- HEADER -->
+        <div id="header" class="border bg">
+            <h1>The Last of Us</h1>
+        </div>
+        <!-- NAV -->
+        <div id="nav" class="border">
+            <!--relative links: they all live in THIS root directory!-->
+            <a href="index.html"> | HOME |</a>
+            <a href="about.html"> | ABOUT |</a>
+            <a href="people.html"> | PEOPLE |</a>
+            <a href="places.html"> | PLACES |</a>
+
+            <br>
+
+            <!--external links: we are leaving this root directory (website) and going outside of it to somewhere else-->
+            <a href="https://www.hbo.com/the-last-of-us">| Official HBO Site |</a>
+
+            <br>
+            <!--in-page jump link: "jumps" to a section of the current page-->
+            <a href="#footer"> | Bottom of Page |</a>
+            
+        </div>
+        <!-- CONTENT -->
+        <div id="content" class="border">
+            <h2>Content for <b>PLACES</b> page.</h2>
+
+            <img src="images/boston.jpg" alt="a shot from the last of us" style="width:100%;">
+        </div>
+        <!-- FOOTER -->
+        <div id="footer" class="border bg">
+            <p>&copy; K Truchon | SE111 | 202630</p> <br>
+            <a href="index.html#wrapper">| Top of HOME Page |</a>
+        </div>
+    </div><!--/ #wrapper -->
+</body>
+</html>
