@@ -9,6 +9,120 @@
     <meta name="description" content="W4 Demo">
 
     <title>Empire Records | ABOUT</title>
+
+    <!--IN-DOCUMENT CSS BELOW-->
+    <style>
+        /*in here we write in CSS (NOT HTML or JS!)*/
+
+        /*add a background image to the whole page*/
+        body {
+            background-image: url("images/records.jpg");
+        }
+
+        /*make the container smaller to center in page and expose background while creating depth*/
+        #container {
+            width:980px;
+            padding:20px;
+            margin:auto;
+            border:2px solid black;
+            box-shadow:0 0 8px black; /*adds drop shadow!*/
+            border-radius: 15px; /*rounds corners of div*/
+            background-color: rgba(33, 33, 33, 0.95);
+            /*a = alpha channel, level of transparency*/
+            color:white;
+        }
+
+        #header {
+            text-align:center;
+            padding:0;
+            margin-bottom:0;
+        }
+
+        h1 {
+            font-size:85px;
+            padding:0;
+            margin:0;
+        }
+
+        /*styling the site buttons to look like buttons*/
+        #buttons {
+            width:600px;
+            height:60px;
+            margin:auto;
+            
+        }
+
+        .nav-btn {
+            width:150px;
+            height:50px;
+            margin-left:23px;
+            margin-right:23px;
+            float:left;
+            
+            text-decoration:none; /*removes underline*/
+
+            font-size:30px;
+            line-height:50px; /*centering vertically when matching the height of the element*/
+
+            text-align: center;
+
+            background-color:rgb(221, 100, 6);
+            color:white;
+
+            font-family:Helvetica, sans-serif;
+
+            border-radius:15px;
+
+            box-shadow:0 0 8px black;
+        }
+
+
+        .nav-btn:visited {
+            color:black;
+        }
+
+        .nav-btn:hover {
+            background-image: url("images/btn_hover.PNG");
+            color:white;
+            background-size:150px;
+
+            box-shadow:0 0 8px white; /*adds a glow*/
+        }
+
+        .nav-btn:active {
+            box-shadow:0 0 8px rgb(81, 81, 223); /*adds a glow*/
+        }
+
+        #main-image {
+            border:5px solid rgb(29, 29, 29);
+            margin:10px;
+            padding:20px;
+            width:850px;
+            margin-left:20px;
+            box-shadow:0 0 8px black;
+        }
+
+        .special-img {
+            width:100%;
+
+        }
+
+        #roof:hover {
+            -webkit-transform:scaleX(-1);
+            transform: scaleX(-1);
+        }
+        
+        #footer {
+            text-align:center;
+        }
+
+        a {
+            background-color:orange;
+            text-decoration:none;
+            color:white;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -17,6 +131,7 @@
         <!--HEADER-->
         <div id="header">
             <h1><em>Empire Records</em></h1>
+            <h4>Open til Midnight!</h4>
         </div><!--/ #header-->
 
         <hr>
@@ -31,6 +146,8 @@
             </div><!--/ #buttons-->
         </div><!--/ #nav-->
 
+       <img src="images/roof.PNG" id="roof" class="special-img">
+
         <hr>
         <!--CONTENT-->
         <div id="content">
@@ -39,7 +156,7 @@
 
             <p>A short 1-2 sentence/logline for the movie...</p>
 
-            <img src="images/poster.jpg" alt="The official movie poster for the 1995 film 'Empire Records'" width="500">
+            <img src="images/poster.jpg" alt="The official movie poster for the 1995 film 'Empire Records'" width="500" id="main-image">
 
             <div class="info">
                 <p><b>Director:</b> Allan Moyle</p>
