@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5D1 - Forms & Tables Demo</title>
+</head>
+<body>
+    <h1>Week 5 - HTLM Tables & Forms</h1>
+
+    <h2>Form w/o Table</h2>
+
+    <!--text fields for manual entry by user - value becomes what user types into box before submitting-->
+
+    <form>
+        <!--labels are used to match up with input elements-->
+        <!--
+            for attribute connects labels with input
+                MUST MATCH input's name attribute
+        -->
+        <label for="firstName">First Name: </label> 
+        <input type="text" name="firstName" id="firstName">
+
+        <!--form elements are inline, so use <br> so separate them-->
+        <br>
+
+        <label for="lastName">Last Name: </label> 
+        <input type="text" name="lastName" id="lastName">
+
+        <br>
+    
+        <!--
+            required attribute means user MUST fill in that element or form will not submit
+        -->
+
+        <label for="email">Email: </label> 
+        <input type="text" name="email" id="email" required>
+
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT!">
+
+    </form>
+
+
+
+    <h2>Form w/ Table</h2>
+
+    <!--form comes FIRST!-->
+    <form>
+        <table>
+            <!--<thead> an be used for column headers-->
+
+            <!--<tbody> is REQUIRED inside of the <table>-->
+                <tbody>
+                    <tr><!--table ROW; should include one <td> for every possible column, leave blank when no info for that row-->
+
+                        <td><!--first data cell in row (left)-->
+                            <label for="firstName">First Name:</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="text" id="firstName" name="firstName" maxlength="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="lastName">Last Name:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="lastName" name="lastName" maxlength="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="email" name="email" maxlength="50">
+                        </td>
+
+                    </tr>
+
+                </tbody>
+        </table>
+    </form>
+
+
+</body>
+</html>
